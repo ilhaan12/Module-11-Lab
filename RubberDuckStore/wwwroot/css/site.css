@@ -20,3 +20,35 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+:root {
+  --duck-yellow: #FFD700;
+  --water-blue: #4FC3F7;
+  --code-gray: #2C3E50;
+  --debug-green: #2ECC71;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+  color: var(--code-gray);
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+h1, h2, h3 {
+  font-family: 'Source Code Pro', monospace;
+  color: var(--code-gray);
+}
+
+footer {
+  background-color: var(--duck-yellow);
+  color: var(--code-gray);
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
