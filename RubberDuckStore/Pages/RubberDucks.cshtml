@@ -1,4 +1,35 @@
 ﻿@page
-@model MyApp.Namespace.RubberDucksModel
+@model RubberDuckStore.Pages.RubberDucksModel
 @{
+    ViewData["Title"] = "Rubber Ducks";
 }
+<!--  At symbols are razor suntax directives-->
+<!-- Main page heading -->
+<h1>Rubber Ducks for Debugging</h1>
+<!-- Form that submits duck selection via POST method -->
+<form method="post">
+    <!-- Dropdown list that binds to the SelectedDuckId property and populates options from Model.DuckList -->
+    <select asp-for="SelectedDuckId" asp-items="Model.DuckList" class="form-control">
+        <!-- Default option when no duck is selected -->
+        <option value="">Select a Duck</option>
+    </select>
+    <!-- Submit button to send the form and show the selected duck details -->
+    <button type="submit" class="btn btn-primary mt-2">Show Duck</button>
+</form>
+<!-- Conditional section that only displays when a duck is selected -->
+@if (Model.SelectedDuck != null)
+{
+    <!-- Container for duck details with top margin spacing -->
+    <div class="mt-4">
+        <!-- Display the selected duck's name as a heading -->
+        <h2>@Model.SelectedDuck.Name</h2>
+        <!-- Display the duck's description -->
+        <p>@Model.SelectedDuck.Description</p>
+        <!-- Display formatted price with 2 decimal places -->
+        <p>Price: $@Model.SelectedDuck.Price.ToString("F2")</p>
+        <!-- Display the duck's image with a maximum width and alt text for accessibility -->
+        <img src="/images/@Model.SelectedDuck.ImageFileName" alt="@Model.SelectedDuck.Name" style="max-width: 300px;" />
+    </div>
+}
+
+
