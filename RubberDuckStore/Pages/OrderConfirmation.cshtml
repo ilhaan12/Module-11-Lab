@@ -1,0 +1,17 @@
+﻿@page
+@model RubberDuckStore.Pages.OrderConfirmationModel
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+<h1>Order Confirmation</h1>
+<div class="alert alert-success" role="alert">
+    Thank you for your order, @Model.Order.CustomerName!
+</div>
+<h2>Order Details</h2>
+<p>Order ID: @Model.Order.Id</p>
+<p>Duck: @Model.Duck.Name</p>
+<p>Quantity: @Model.Order.Quantity</p>
+<p>Total Price: $@(Model.Duck.Price * Model.Order.Quantity)</p>
+<p>Happy debugging with your new duck!</p>
+<a asp-page="RubberDucks" class="btn btn-primary">Back to Ducks</a>
+

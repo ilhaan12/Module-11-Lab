@@ -26,6 +26,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspaces/Module-11-Lab/RubberDuckStore/Pages/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/Module-11-Lab/RubberDuckStore/Pages/OrderForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/Module-11-Lab/RubberDuckStore/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

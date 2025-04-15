@@ -29,6 +29,10 @@
         <p>Price: $@Model.SelectedDuck.Price.ToString("F2")</p>
         <!-- Display the duck's image with a maximum width and alt text for accessibility -->
         <img src="/images/@Model.SelectedDuck.ImageFileName" alt="@Model.SelectedDuck.Name" style="max-width: 300px;" />
+        <form method="get" asp-asp-page="OrderForm">
+            <input type="hidden" name="duckId" value="@Model.SelectedDuck.Id">
+            <button type="Submit" class="btn btn-success mt-2">Buy this duck!</button>
+        </form>
     </div>
 }
 
